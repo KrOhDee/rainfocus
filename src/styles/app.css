@@ -105,11 +105,12 @@ body {
 @media (max-width: 768px) {
   .inner--title {
     padding-top: 0;
+    border-bottom: #8b62af 1px solid;
   }
   .inner--main {
     height: auto;
     border-right: none;
-    padding: 5px;
+    padding: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -122,7 +123,11 @@ body {
     gap: 10px;
   }
   .inner--selections {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 30px;
+    font-size: 0.4rem;
   }
   .inner--location {
     font-size: 0.6rem;
