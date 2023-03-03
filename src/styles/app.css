@@ -103,7 +103,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Styles for screens smaller than 768px */
+  .inner--title {
+    padding-top: 0;
+  }
   .inner--main {
     height: auto;
     border-right: none;
@@ -114,7 +116,10 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
   }
   .inner--selections {
     display: none;

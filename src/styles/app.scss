@@ -96,14 +96,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Styles for screens smaller than 768px */
+  .inner--title {
+    padding-top: 0;
+  }
+
   .inner--main {
     height: auto;
     border-right: none;
     padding: 5px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+    gap: 10px;
   }
 
   .inner--selections {
