@@ -1,0 +1,150 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.app--flex {
+  display: flex;
+  gap: 10px;
+}
+
+//inner dashboard styles
+.inner--main {
+  height: 100vh;
+  border-right: 1px solid rgba(151, 151, 151, 0.5);
+  padding-right: 10px;
+}
+
+.inner--title {
+  padding-top: 15px;
+  padding-left: 10px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.inner--location {
+  font-size: 0.7rem;
+  padding-left: 12px;
+}
+
+.inner--input {
+  width: 185px;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 0.7rem;
+}
+
+.inner--input:hover {
+  border: 1px solid rgb(81, 2, 165);
+  cursor: pointer;
+}
+
+.inner--input:focus {
+  outline-color: rgb(81, 2, 165);
+  border: none;
+  cursor: auto;
+}
+
+.inner--selections {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: gray;
+}
+
+//holds all selections
+.inner-selections--container {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  padding-left: 10px;
+}
+
+//the attendee selection
+.inner--attendee-bg {
+  background-color: rgba(76, 24, 220, 0.2);
+  color: rgb(81, 2, 165);
+  border-radius: 10px;
+}
+
+.inner--attendee-circle {
+  background-color: rgb(81, 2, 165);
+}
+
+//holds attendee dropdown
+.attendees--container {
+  margin-top: -5px;
+  margin-left: 55px;
+}
+
+.inner-selections--container:hover,
+.attendees--items:hover {
+  cursor: pointer;
+  color: rgba($color: #8b62af, $alpha: 0.5);
+}
+
+@media (max-width: 768px) {
+  .app--column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  .inner--main {
+    height: auto;
+    border-right: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .inner--selections {
+    display: none;
+  }
+
+  .inner--location {
+    font-size: 0.6rem;
+    padding-right: 2px;
+  }
+
+  .inner--input {
+    max-width: 150px;
+  }
+
+  .attendees--container {
+    display: none;
+  }
+}
+
+//outer dashboard styles
+
+.outer--main {
+  height: 100vh;
+  border-right: 1px solid rgba(151, 151, 151, 0.5);
+}
+
+.outer--icon {
+  display: flex;
+  width: 30px;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .outer--main {
+    display: none;
+  }
+}
+
+// content
+
+.app--column {
+  display: flex;
+}
