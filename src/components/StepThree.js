@@ -4,7 +4,10 @@ import pc from '../assets/pc.svg';
 export default function StepTwo() {
   return (
     <div className="step-two--container">
-      <p>Step 2: Build registration workflows.</p>
+      <p className="step-three--step">
+        <span style={{ fontWeight: '700' }}>Step 3:</span> Build registration
+        workflows.
+      </p>
       <div className="blocks-container">
         <Blocks
           title="Attendee Portal"

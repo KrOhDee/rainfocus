@@ -2,11 +2,15 @@ import logo from '../assets/logo.svg';
 
 export default function ContentHeader() {
   return (
-    <div className="hcontainer">
+    <div className="content-header--container">
       <div className="content-header--header">
-        <img className="content-header--icon" src={logo}></img>
+        <img
+          alt="RainFocus Summit logo"
+          className="content-header--icon"
+          src={logo}
+        ></img>
         <div>
-          <h2>RainFocus Summit</h2>
+          <h1>RainFocus Summit</h1>
           <p>December 15th</p>
           <p>Lehi, Utah</p>
         </div>

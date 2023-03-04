@@ -1,7 +1,5 @@
 import ContentHeader from './ContentHeader';
-import StepOne from './StepOne';
-import StepTwo from './StepTwo';
-import StepThree from './StepThree';
+import ContentMain from './ContentMain';
 import person from '../assets/person.svg';
 
 export default function Content() {
@@ -9,12 +7,14 @@ export default function Content() {
     <div className="content--container">
       <ContentHeader />
       <div className="content--subheader">
-        <img className="content--subheader-icon" src={person}></img>
+        <img
+          alt="An icon of a person"
+          className="content--subheader-icon"
+          src={person}
+        ></img>
         <p>Attendee</p>
       </div>
-      <StepOne />
-      <StepTwo />
-      <StepThree />
+      <ContentMain />
     </div>
   );
 }
