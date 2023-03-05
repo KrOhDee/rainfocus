@@ -12,21 +12,21 @@ export default function StepTwo() {
       <div className="blocks-container">
         <Blocks
           title="Attendee Registration"
-          description="Start by creating a general registration."
+          description="Start by creating a general registration workflow"
           image={arrow}
         />
         <Blocks
           title="Attendee Registration"
-          description="Start by creating a general registration."
+          description="Start by creating a general registration workflow"
           image={arrow}
         />
         <Blocks
           title="Attendee Registration"
-          description="Start by creating a general registration."
+          description="Start by creating a general registration workflow"
           image={arrow}
         />
         <Blocks
-          description="Add Registration Workflow."
+          description="Add Registration Workflow"
           image={plus}
           className="blocks--add"
         />

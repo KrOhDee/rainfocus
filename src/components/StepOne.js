@@ -5,19 +5,19 @@ export default function StepOne() {
         <span style={{ fontWeight: '700' }}>Step 1:</span> Base settings.
       </p>
       <div className="step-one--content">
-        <div>
-          <p style={{ fontWeight: '700' }}>General</p>
+        <div className="step-one--containers">
+          <p style={{ fontWeight: '700', marginBottom: '-8px' }}>General</p>
           <p>Define Attendee types & attributes</p>
         </div>
-        <div>
-          <p style={{ fontWeight: '700' }}>Title</p>
+        <div className="step-one--containers">
+          <p style={{ fontWeight: '700', marginBottom: '-8px' }}>Title</p>
           <p>
             Description that explains the value goes here. Description that
             explains the value goes here.
           </p>
         </div>
-        <div>
-          <p style={{ fontWeight: '700' }}>Title</p>
+        <div className="step-one--containers">
+          <p style={{ fontWeight: '700', marginBottom: '-8px' }}>Title</p>
           <p>
             Description that explains the value goes here. Description that
             explains the value goes here.

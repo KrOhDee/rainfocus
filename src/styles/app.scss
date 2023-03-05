@@ -23,6 +23,10 @@ body {
   padding: 0;
 }
 
+p {
+  font-size: 0.8rem;
+}
+
 .app--column {
   display: flex;
 }
@@ -41,7 +45,8 @@ body {
 
 .inner--title {
   padding-top: 15px;
-  padding-left: 10px;
+  padding-left: 11px;
+  font-size: 0.9rem;
   padding-bottom: 10px;
   font-weight: 600;
   margin: 0;
@@ -106,6 +111,10 @@ body {
   background-color: $color-purple;
 }
 
+.hamburger {
+  display: none;
+}
+
 //attendee dropdown
 .attendees--items:hover {
   cursor: pointer;
@@ -127,15 +136,24 @@ body {
   border-right: 1px solid $color-light-gray-border;
 }
 
+.outer--sub {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  gap: 25px;
+  justify-self: center;
+}
+
 .outer--profile {
   padding-bottom: 15px;
   @include hover-effect;
 }
 
 .outer--icon {
+  padding-left: 15px;
+  padding-right: 15px;
   width: 32px;
   height: 32px;
-  padding: 10px 5px 10px 10px;
   @include hover-effect;
 }
 
@@ -211,16 +229,18 @@ button {
 }
 
 //step one
+.step-one--containers {
+  max-width: 200px;
+}
+
 .step-one--step {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .step-one--content {
   border: 1px solid $color-light-gray-border;
   border-radius: 5px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   padding: 10px 20px;
   gap: 50px;
   &:hover {
@@ -244,7 +264,6 @@ button {
 //step three
 .step-three--container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin-bottom: 25px;
 }
@@ -281,33 +300,26 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 40px 40px;
+  padding: 20px 40px 20px;
 }
 
 .blocks--title {
   display: flex;
+  padding-bottom: 0px;
   align-items: center;
   gap: 10px;
 }
 
 //media
 @media (max-width: 920px) {
-  .outer--icon {
-    padding: 10px;
-  }
-
   .blocks-container {
     grid-template-columns: (1fr);
   }
 
   .step-one--content {
-    flex-direction: column;
+    align-items: center;
     padding: 10px;
-    gap: 10px;
-  }
-
-  .outer--icon {
-    padding-right: 0;
+    gap: 5px;
   }
 
   .content-header--icon {
@@ -325,7 +337,19 @@ button {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
+  .step-one--content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .outer--main {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
   .app--column {
     display: flex;
     flex-direction: column;
@@ -343,16 +367,17 @@ button {
 
   .inner--main {
     min-height: fit-content;
-    padding: 10px;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
     gap: 10px;
     border: none;
   }
 
   .inner-selections--container {
-    padding-left: 5px;
+    display: none;
     padding-bottom: 5px;
+    font-size: 0.1rem;
     background-color: white;
     border-radius: 0;
     border-bottom: 2px solid $color-light-gray-border;
@@ -360,8 +385,8 @@ button {
 
   .inner--selections {
     display: flex;
-    max-width: 30px;
-    font-size: 0.4rem;
+    justify-content: flex-start;
+    flex-direction: column;
   }
 
   .inner--location {
@@ -375,6 +400,13 @@ button {
     background-size: 15px 15px;
     background-position-x: 8px;
     padding: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+    @include hover-effect;
   }
 
   .attendees--container {
@@ -399,7 +431,33 @@ button {
     display: none;
   }
 
+  .content-header--header {
+    margin-top: -20px;
+  }
+
+  .content-header--footer {
+    width: 70%;
+  }
+
   button {
     margin-right: auto;
+  }
+
+  .step-one--content {
+    flex-direction: row;
+  }
+
+  .blocks--block {
+    padding: 10px 30px 10px;
+  }
+
+  .blocks--add {
+    padding: 10px 30px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .step-one--content {
+    flex-direction: column;
   }
 }

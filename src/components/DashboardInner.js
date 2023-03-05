@@ -1,13 +1,20 @@
 import InnerSelections from './InnerSelections';
 import AttendeesDropdown from './AttendeesDropdown';
+import hamburger from '../assets/hamburger.svg';
 
 export default function DashboardInner() {
   return (
     <div className="inner--main">
       <div>
         <p className="inner--title">RainFocus Summit</p>
-        <p className="inner--location">Lehi, UT * December 15th</p>
+        <img className="hamburger" src={hamburger}></img>
+        <p className="inner--location">
+          Lehi, UT{' '}
+          <span style={{ fontWeight: '700', fontSize: '0.8rem' }}>•</span>{' '}
+          December 15th
+        </p>
         <input className="inner--input" readOnly value="     Search"></input>
+
         <div className="inner--selections">
           <InnerSelections name="Guide" />
 
@@ -19,7 +26,7 @@ export default function DashboardInner() {
           <AttendeesDropdown />
 
           <InnerSelections name="Content" />
-          <InnerSelections name="Exhibitor" />
+          <InnerSelections name="Exhibitors" />
         </div>
       </div>
     </div>
