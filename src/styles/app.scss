@@ -2,10 +2,7 @@ $color-purple: #5c00dc;
 $color-gray: #777777;
 $color-light-gray: #f4f4f4;
 $color-light-gray-border: #cccccc;
-$color-hover-purple: rgba(
-  $color: #8b62af,
-  $alpha: 0.5,
-);
+$color-hover-purple: rgba(139, 98, 175, 0.5);
 
 @mixin hover-effect {
   transition: transform 0.2s ease-out;
