@@ -7,7 +7,7 @@ export default function DashboardInner() {
       <div>
         <p className="inner--title">RainFocus Summit</p>
         <p className="inner--location">Lehi, UT * December 15th</p>
-        <input className="inner--input" readonly value="     Search"></input>
+        <input className="inner--input" readOnly value="     Search"></input>
         <div className="inner--selections">
           <InnerSelections name="Guide" />
 

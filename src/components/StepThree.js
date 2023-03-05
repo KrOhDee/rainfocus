@@ -1,9 +1,9 @@
 import Blocks from './Blocks';
 import pc from '../assets/pc.svg';
 
-export default function StepTwo() {
+export default function StepThree() {
   return (
-    <div className="step-two--container">
+    <div className="step-three--container">
       <p className="step-three--step">
         <span style={{ fontWeight: '700' }}>Step 3:</span> Build registration
         workflows.
