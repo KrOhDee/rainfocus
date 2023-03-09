@@ -1,16 +1,16 @@
-import logo from '../assets/logo.svg';
-import r from '../assets/r.svg';
+import swan2 from '../assets/swan2.png';
+import swan from '../assets/swan.png';
 import user from '../assets/user.svg';
 
 export default function DashboardOuter() {
   return (
     <div className="outer--main">
       <div className="outer--sub">
-        <img alt="RainFocus logo" className="outer--icon" src={r}></img>
+        <img alt="RainFocus logo" className="outer--icon" src={swan}></img>
         <img
           alt="RainFocus Summit logo"
           className="outer--icon"
-          src={logo}
+          src={swan2}
         ></img>
       </div>
       <div className="teste2">

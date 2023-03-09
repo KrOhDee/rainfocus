@@ -6,12 +6,12 @@ export default function DashboardInner() {
   return (
     <div className="inner--main">
       <div>
-        <p className="inner--title">RainFocus Summit</p>
+        <p className="inner--title">Swan Events</p>
         <img className="hamburger" src={hamburger}></img>
         <p className="inner--location">
-          Lehi, UT{' '}
+          Miami, FL{' '}
           <span style={{ fontWeight: '700', fontSize: '0.8rem' }}>•</span>{' '}
-          December 15th
+          August 25th
         </p>
         <input className="inner--input" readOnly value="     Search"></input>
 

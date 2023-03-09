@@ -9,7 +9,7 @@ export default function Blocks(props) {
         ></img>
         <p style={{ fontWeight: '700', marginBottom: '0' }}>{props.title}</p>
       </div>
-      <p>{props.description}</p>
+      <p style={{ fontSize: '0.9rem' }}>{props.description}</p>
     </div>
   );
 }

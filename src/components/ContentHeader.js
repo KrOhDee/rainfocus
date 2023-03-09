@@ -1,4 +1,4 @@
-import logo from '../assets/logo.svg';
+import swan from '../assets/swan.png';
 
 export default function ContentHeader() {
   return (
@@ -7,12 +7,12 @@ export default function ContentHeader() {
         <img
           alt="RainFocus Summit logo"
           className="content-header--icon"
-          src={logo}
+          src={swan}
         ></img>
         <div>
-          <h1>RainFocus Summit</h1>
-          <p>December 15th</p>
-          <p>Lehi, Utah</p>
+          <h1>Swan Events</h1>
+          <p>August 25th</p>
+          <p>Miami, Florida</p>
         </div>
         <button>Edit event</button>
       </div>
