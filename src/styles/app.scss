@@ -310,7 +310,6 @@ button {
   }
 
   .step-one--content {
-    align-items: center;
     padding: 10px;
     gap: 5px;
   }
@@ -333,6 +332,7 @@ button {
 @media (max-width: 850px) {
   .step-one--content {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -438,6 +438,7 @@ button {
 
   .step-one--content {
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .blocks--block {
@@ -452,5 +453,6 @@ button {
 @media (max-width: 500px) {
   .step-one--content {
     flex-direction: column;
+    align-items: center;
   }
 }
