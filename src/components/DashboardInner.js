@@ -10,7 +10,7 @@ export default function DashboardInner() {
         <img className="hamburger" src={hamburger}></img>
         <p className="inner--location">
           Miami, FL{' '}
-          <span style={{ fontWeight: '700', fontSize: '0.8rem' }}>•</span>{' '}
+          <span style={{ fontWeight: '700', fontSize: '0.9rem' }}>•</span>{' '}
           August 25th
         </p>
         <input className="inner--input" readOnly value="     Search"></input>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 $color-primary: #0096dc;
 $color-gray: #777777;
 $color-light-gray: #f4f4f4;
@@ -11,6 +13,10 @@ $color-hover-blue: rgba(2, 31, 159, 0.5);
     cursor: pointer;
     transform: scale(1.05);
   }
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .app--column {
@@ -32,14 +38,12 @@ $color-hover-blue: rgba(2, 31, 159, 0.5);
 .inner--title {
   padding-top: 15px;
   padding-left: 11px;
-  font-size: 0.9rem;
-  padding-bottom: 10px;
   font-weight: 600;
   margin: 0;
 }
 
 .inner--location {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   padding-left: 12px;
 }
 
