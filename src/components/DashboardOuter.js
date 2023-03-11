@@ -1,5 +1,5 @@
-import swan2 from '../assets/swan2.png';
-import swan from '../assets/swan.png';
+import swan2 from '../assets/swan2.svg';
+import swan from '../assets/swan.svg';
 import user from '../assets/user.svg';
 
 export default function DashboardOuter() {

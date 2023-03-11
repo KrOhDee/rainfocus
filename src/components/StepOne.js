@@ -8,7 +8,8 @@ export default function StepOne() {
         <div className="step-one--containers">
           <p style={{ fontWeight: '700', marginBottom: '-8px' }}>General</p>
           <p style={{ fontSize: '0.9rem' }}>
-            Define Attendee types & attributes
+            Define Attendee types & attributes. Define Attendee types &
+            attributes.
           </p>
         </div>
         <div className="step-one--containers">

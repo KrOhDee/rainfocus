@@ -1,8 +1,8 @@
-$color-purple: #5c00dc;
+$color-primary: #0096dc;
 $color-gray: #777777;
 $color-light-gray: #f4f4f4;
 $color-light-gray-border: #cccccc;
-$color-hover-purple: rgba(139, 98, 175, 0.5);
+$color-hover-blue: rgba(2, 31, 159, 0.5);
 
 @mixin hover-effect {
   transition: transform 0.2s ease-out;
@@ -11,13 +11,6 @@ $color-hover-purple: rgba(139, 98, 175, 0.5);
     cursor: pointer;
     transform: scale(1.05);
   }
-}
-
-html,
-body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 .app--column {
@@ -66,12 +59,12 @@ body {
   font-size: 0.7rem;
   font-weight: 600;
   &:hover {
-    border: 1px solid $color-purple;
+    border: 1px solid $color-primary;
     cursor: pointer;
   }
 
   &:focus {
-    outline-color: $color-purple;
+    outline-color: $color-primary;
     border: none;
     cursor: auto;
   }
@@ -90,18 +83,18 @@ body {
   padding-left: 10px;
   &:hover {
     cursor: pointer;
-    color: $color-hover-purple;
+    color: $color-hover-blue;
   }
 }
 
 .inner--attendee-bg {
-  background-color: rgba(76, 24, 220, 0.2);
-  color: $color-purple;
+  background-color: rgba(16, 92, 244, 0.2);
+  color: $color-primary;
   border-radius: 10px;
 }
 
 .inner--attendee-circle {
-  background-color: $color-purple;
+  background-color: $color-primary;
 }
 
 .hamburger {
@@ -111,7 +104,7 @@ body {
 //attendee dropdown
 .attendees--items:hover {
   cursor: pointer;
-  color: $color-hover-purple;
+  color: $color-hover-blue;
 }
 
 .attendees--container {
@@ -212,7 +205,7 @@ body {
 button {
   height: fit-content;
   margin-left: auto;
-  background-color: $color-purple;
+  background-color: $color-primary;
   color: white;
   border-radius: 5px;
   padding: 8px 16px 8px 16px;
@@ -355,7 +348,7 @@ button {
   .inner--title {
     font-size: 1.3rem;
     padding-top: 0;
-    border-bottom: #8b62af 5px double;
+    border-bottom: $color-primary 5px double;
   }
 
   .inner--main {

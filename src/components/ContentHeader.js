@@ -1,4 +1,4 @@
-import swan from '../assets/swan.png';
+import swan from '../assets/swan.svg';
 
 export default function ContentHeader() {
   return (
